@@ -1,2 +1,0 @@
-# EPR
-sito iniziale

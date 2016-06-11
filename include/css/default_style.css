@@ -19,6 +19,213 @@ a.active {
     color: #18bc9c;
 }
 
+
+.text-folio{
+        color: #777;
+}
+
+.description_folio{
+        text-align: justify;
+        word-break: keep-all;
+        margin-top:40px;
+}
+
+.hider{
+        display:none;
+}
+
+
+.circulare{
+    max-height:350px;
+    border-radius: 50px;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    margin:0 auto;
+}
+
+.row .txt{
+        margin-top:90px;
+}
+
+
+#slideshow {
+    position:relative;
+    height:400px;
+    max-height:400px;
+    overflow: hidden;
+    background-repeat:none;
+    
+}
+#slideshow.boats{
+    background-image: url("../img/pan_boats.png");
+}
+
+#slideshow.auto{
+    background-image: url("../img/pan_auto.png");
+}
+
+#slideshow.factories{
+    background-image: url("../img/pan_energy.png");
+}
+
+#slideshow.scoves{
+    background-image: url("../img/pan_heat.png");
+}
+
+@media(max-width:768px) {
+    #slideshow {
+        background-size: cover;
+    }
+    #slideshow.boats{
+        background-image: url("../img/pan_boats_mob.png");
+    }
+    #slideshow.auto{
+        background-image: url("../img/pan_auto_mob.png");
+    }
+    #slideshow.factories{
+        background-image: url("../img/pan_energy_mob.png");
+    }
+    #slideshow.scoves{
+        background-image: url("../img/pan_heat_mob.png");
+    }
+    
+    .row .txt{
+        margin-top:0px;
+        margin-bottom:0px;
+    }
+        
+    
+}
+
+#slideshow picture {
+    position:absolute;
+    top:0;
+    left:0;
+    z-index:8;
+    
+}
+
+
+
+
+
+
+.toggle_menu{
+}
+
+.red{
+    background-color: red;
+}
+
+.faq_head{
+    height:300px;
+    background-color: #A82743;
+    text-align: right;
+}
+.faq_head .fa{
+    color: white;
+    font-size: 15em;
+    margin-top: 75px;
+    margin-right:15px;
+}
+.faq_head p{
+    margin-top: 75px;
+    margin-bottom: 0px;
+    color: white;
+    font-size: 12em;
+    display: inline-block;
+    float: left;
+}
+.faq_list dd{
+    margin-bottom: 1em;
+}
+
+#contacts_chinellato{
+    padding: 0px;
+}
+#contacts_chinellato address{
+    margin-top:20px;
+}
+#contacts_vendors{
+    padding-top:75px;
+}
+
+.contacts_head{
+    height:300px;
+    background-color: #5C323E;
+    text-align: right;
+}
+.contacts_head .fa{
+    color: white;
+    font-size: 15em;
+    margin-top: 75px;
+    margin-right:15px;
+}
+
+.contacts_head p{
+    margin-top: 75px;
+    margin-bottom: 0px;
+    color: white;
+    font-size: 12em;
+    display: inline-block;
+    float: left;
+}
+
+.vendor-grid .col-md-4{
+    margin-top:20px;
+    margin-bottom:20px;
+}
+
+
+.active a:link{
+    color: red;
+}
+
+
+
+
+
+
+@media(min-width:768px) {
+    .vendor-grid img, .vendor-grid .fa{
+        height: 100px;
+    }
+    
+    .contacts_head .fa{
+        color: white;
+        font-size: 15em;
+        margin-top: 95px;
+        margin-right:0px;
+    }  
+    
+    .faq_head .fa{
+        color: white;
+        font-size: 15em;
+        margin-top: 95px;
+        margin-right:0px;
+    }  
+    
+        .description_folio{
+            text-align: justify;
+            word-break: keep-all;
+            margin: 40px auto;
+    }
+    
+    
+    
+    
+    .circulare{
+        max-height:350px;
+        border-radius: 50px;
+        -webkit-border-radius: 50px;
+        -moz-border-radius: 50x;
+        margin:25px auto;
+    }
+    
+    
+}
+
+
 h1,
 h2,
 h3,
@@ -66,12 +273,30 @@ hr.gear-primary {
 
 hr.gear-primary:after {
     color: #2c3e50;
-    background-color: #fff;
+    background-color: transparent;
 }
 
 .img-centered {
     margin: 0 auto;
 }
+
+
+
+
+.background-lime{
+     background-color: #fff;
+}
+
+.background-purple{
+     background-color: #ebebeb;
+}
+
+hr{
+        border-color: #A4A4A4;
+}
+
+
+
 
 header {
     text-align: center;
@@ -167,6 +392,7 @@ header .intro-text .skills {
 
 section {
     padding: 100px 0;
+    box-shadow: 0px -1px 7px #bbbbbb;
 }
 
 section h2 {
@@ -211,11 +437,32 @@ footer h3 {
 }
 
 
+
 footer .bar {
     padding: 25px 0;
-    background-color: #229399;
     /* background-color: #233140;*/
 }
+
+footer .index{
+    /* background-color: #233140;*/
+    background-color: #229399 !important;
+}
+
+footer .applications{
+    /* background-color: #233140;*/
+    background-color: #229399 !important;
+}
+
+footer .faq{
+    /* background-color: #233140;*/
+    background-color: #A82743 !important;
+}
+
+footer .contacts{
+    /* background-color: #233140;*/
+    background-color: #5C323E !important;
+}
+
 
 
 .btn:focus,

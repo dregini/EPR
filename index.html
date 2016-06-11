@@ -1,11 +1,13 @@
 <html>
     <head>
+    	<meta name="google-site-verification" content="S1RBbMpjUuJVQqyHdTnsbqrqhVg1QC2RiHsJMDOL_s4" />
         <title>Eco Power Revolution</title>
-        <!-- Bootstrap Core CSS - Uses Bootswatch Flatly Theme: http://bootswatch.com/flatly/ -->
+        <!-- Bootstrap Core CSS -->
         <link href="include/css/bootstrap.min.css" rel="stylesheet">
 
         <!-- Custom CSS -->
         <link href="include/css/default_style.css" rel="stylesheet">
+        <link href="include/css/tabs.css" rel="stylesheet">
 
         <!-- Custom Fonts -->
         <link href="include/css/font-awesome.min.css" rel="stylesheet" type="text/css">
@@ -13,48 +15,44 @@
         <link href="http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
                 
         <!-- jQuery -->
-        <script src="include/js/jquery-2.3.3.min.js"></script>
+        <script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
+        <script src="include/js/functions.js"></script>
         
         <!-- Bootstrap Core JavaScript -->
         <script src="include/js/bootstrap.min.js"></script>
-        
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     </head>
+
     <body id="page-top" class="index">
-        
-        <!-- Navigation -->
+        <!-- Barra di navigazione -->
         <nav class="navbar navbar-default navbar-fixed-top">
             <div class="container">
-                <!-- Brand and toggle get grouped for better mobile display -->
                 <div class="navbar-header page-scroll">
-                    <button type="button" class="navbar-toggle" >
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                         <span class="sr-only">Toggle navigation</span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="#page-top">EPR</a>
+                    <a class="navbar-brand" href="index.html">EPR</a>
                 </div>
-
-                <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav navbar-right">
-                        <li class="hidden">
-                            <a href="#page-top"></a>
+                        <li>
+                            <a href="index.html">Home</a>
                         </li>
-                        <li class="page-scroll">
-                            <a href="#portfolio">Home</a>
+                        <li>
+                            <a href="applications.html">Applicazioni</a>
                         </li>
-                        <li class="page-scroll">
-                            <a href="#about">FAQ</a>
+                        <li>
+                            <a href="faq.html">FAQ</a>
                         </li>
-                        <li class="page-scroll">
-                            <a href="#contact">Contatti</a>
+                        <li>
+                            <a href="contacts.html">Contatti</a>
                         </li>
                     </ul>
                 </div>
-                <!-- /.navbar-collapse -->
             </div>
-            <!-- /.container-fluid -->
         </nav>
 
         <!-- Header -->
@@ -73,27 +71,39 @@
             </div>
         </header>
         
+        <!-- Introduzione EPR -->
+        <section id="portfolio" class="background-purple text-folio">
+             <div class="container ">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <p class="description_folio">
+                        EPR &egrave un regolatore di flusso, che riduce consumi ed emissioni e allo stesso tempo migliora le prestazioni del motore.
+                        </p>
+                    </div>  
+                    <div class="col-lg-12"> 
+                        <img src="include/img/epr_viper.jpg" class="img-responsive circulare" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
         
-        
-         <!-- Meno-Emissioni Section -->
-        <section id="portfolio">
-             <div class="container">
+        <!-- Meno-Emissioni Section -->
+        <section id="portfolio" class="text-folio">
+            <div class="container ">
                 <div class="row">
                     <div class="col-lg-12 text-center">
                         <h2>Meno Emissioni</h2>
-                        <hr class="gear-primary">
+                        <hr>
                     </div>
                 </div>
                 </br>
                 <div class="row">
-                    <div class="col-sm-6"> 
-                        <img src="include/img/m-emissioni.jpg" class="img-responsive" alt="">
+                    <div class="col-md-12 col-lg-6"> 
+                        <img src="include/img/m_emissioni.png" class="img-responsive circulare" alt="">
                     </div>
-                    <div class="col-sm-6">
-                        <p>Lorem ipsum, bla bla bla bla bla bla bla bla bla bla bla bla 
-                        bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla 
-                        bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla 
-                        ecc...
+                    <div class="col-md-12 col-lg-6">
+                        <p class="description_folio">
+                            La riduzione delle emissioni nocive con EPR avviene per accelerazione del flusso di scarico. Grazie a questa caratteristica innovativa, &egrave possibile mantenere una riduzione delle emissioni efficace anche ad alti regimi di funzionamento del motore, riducendo l&#39;intensit&agrave dei fumi di scarico e un&#39;aria, nell&#39;ambiente circostante, pi&ugrave respirabile.
                         </p>
                         </br>
                     </div>  
@@ -101,110 +111,97 @@
             </div>
         </section>
         
-        
         <!-- Meno-Consumi Section -->
-           <section id="portfolio">
+        <section id="portfolio" class="background-purple text-folio">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12 text-center">
                         <h2>Meno Consumi</h2>
-                        <hr class="gear-primary">
+                        <hr >
                     </div>
                 </div>
                 </br>
                 <div class="row"> 
-                    <div class="col-sm-6 col-sm-push-6"> 
-                        <img src="include/img/m-consumi.jpg" class="img-responsive" alt="">
+                    <div class="col-md-12 col-lg-6 col-lg-push-6"> 
+                        <img src="include/img/m_consumi.png" class="img-responsive circulare" alt="">
                     </div>
-                    
-                    <div class="col-sm-6 col-sm-pull-6">
-                        <p>Lorem ipsum, bla bla bla bla bla bla bla bla bla bla bla bla 
-                        bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla 
-                        bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla 
-                        ecc...
+                    <div class="col-md-12 col-lg-6 col-lg-pull-6">
+                        <p class="description_folio">
+                            La riduzione dei consumi &egrave una delle caratteristiche che rendono EPR una scelta valida per chi ricerca soluzioni per risparmiare. Grazie all&#39 aumento delle performance del motore, mantenendo lo stesso stile di guida, si arriva a consumare dal 10% al 20% in meno in citt&agrave, con punte di circa 25% nei percorsi autostradali. Questi risultati dipendono dalle condizioni e dall'utilizzo del motore, in media circa il 15% per l&#39 uso medio di un&#39 auto familiare. Si raggiungono risultati migliori su motori adibiti ad un uso specifico (auto di rappresentanza che percorrono tratte prevalentemente extraurbane, city car di piccola cilindrata per i percorsi cittadini, impianti di generazione e gruppi elettrogeni a rpm costanti), per i quali &egrave possibile studiare il progetto per regimi di funzionamento pi&ugrave settoriali. EPR viene quindi adeguato in base alla struttura/dimensione del motore sulla quale si va ad installare.
                         </p>
                         </br>
-                        
-
                     </div> 
-                     
-                    
-                    
                 </div>
             </div>
         </section>
-        
-       
 
         <!-- Maggior-Ripresa Section -->
-        <section id="portfolio">
+        <section id="portfolio" class="text-folio">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12 text-center">
                         <h2>Maggior Ripresa</h2>
-                        <hr class="gear-primary">
+                        <hr>
                     </div>
                 </div>
                 </br>
                 <div class="row"> 
-                    <div class="col-sm-6"> 
-                        <img src="include/img/m-ripresa.jpg" class="img-responsive" alt="">
+                    <div class="col-md-12 col-lg-6"> 
+                        <img src="include/img/m_ripresa.png" class="img-responsive circulare" alt="">
                     </div>
-                    <div class="col-sm-6 ">
-                        <p>Lorem ipsum, bla bla bla bla bla bla bla bla bla bla bla bla 
-                        bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla 
-                        bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla 
-                        ecc...
+                    <div class="col-md-12 col-lg-6">
+                        <p class="description_folio">
+                        Il dispositivo EPR permette di migliorare la risposta del motore, sia ai bassi che agli alti regimi di funzionamento.
+                        <br/> 
+                        Si ottiene applicando degli accorgimenti che favoriscono il funzionamento del motore, migliorando la combustione e riducendo le perdite di carico complessive. 
+                        <br/>
+                        La prima sensazione dopo l&#39;implementazione del dispositivo, &egrave quella di avere un motore molto pi&ugrave reattivo, che risponde meglio all&#39;acceleratore, riducendo notevolmente il tempo impiegato per &quot;prendere coppia&quot;. Un altro aspetto si pu&ograve notare quando ci si trova ad affrontare tratti in pendenza, dove ad esempio le auto di piccola cilindrata costringono a scalare le marce, ritrovandosi a percorrere anche salite apparentemente leggere in prima o seconda: con EPR, grazie alla compensazione delle perdite di carico, il motore riesce a rispondere ad uno sforzo maggiore in modo pi&ugrave fluido, ampliando l&#39;intervallo di efficacia di ogni marcia. Un funzionamento pi&ugrave lineare del motore d&agrave ottimi risultati anche nelle auto con cambio automatico e sugli impianti a GPL!
                         </p>
                         </br>
-                        
-
                     </div>                     
                 </div>
             </div>
         </section>
         
-        
         <!-- Maggior-Durata Section -->
-           <section id="portfolio">
+        <section id="portfolio" class="background-purple text-folio">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12 text-center">
                         <h2>Maggior Durata</h2>
-                        <hr class="gear-primary">
+                        <hr>
                     </div>
                 </div>
                 </br>
                 <div class="row"> 
-                    <div class="col-sm-6 col-sm-push-6"> 
-                        <img src="include/img/m-durata.jpg" class="img-responsive" alt="">
+                    <div class="col-md-12 col-lg-6 col-lg-push-6"> 
+                        <img src="include/img/m_durata.png" class="img-responsive circulare" alt="">
                     </div>
-                    
-                    <div class="col-sm-6 col-sm-pull-6">
-                        <p>Lorem ipsum, bla bla bla bla bla bla bla bla bla bla bla bla 
-                        bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla 
-                        bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla 
-                        ecc...
+                    <div class="col-md-12 col-lg-6 col-lg-pull-6">
+                        <p class="description_folio">
+                            Grazie alla riduzione delle vibrazioni del moto disordinato delle molecole riusciamo a garantire un funzionamento pi&ugrave lineare.
+                            <br/>
+                            Cos&igrave facendo, si ottiene una guida ad alti regimi pi&ugrave confortevole e si riducono le sollecitazioni meccaniche relative alle risonanze che si trasmettono sia sull&#39;impianto di scarico, sia sul motore stesso. 
+                            <br/>
+                            Quindi aumentandone la vita media: un flusso pi&ugrave regolare infatti, garantisce un miglioramento sulle prestazioni e sui consumi e riduce la possibilit&agrave che si verifichino problemi all&#39;albero motore, contro torsioni causate dalle forze parassite durante le risonanze per piccoli spostamenti dall&#39;asse di funzionamento ideale.
                         </p>
                         </br>
-
                     </div>                     
                 </div>
             </div>
         </section>
         
+        <!-- Footer -->
         <footer class="text-center">
-            <div class="bar">
+            <div class="bar index">
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-12">
-                            Copyright &copy; Eco Power Revolution 2016
+                            Copyright &copy Chinellato Group 2016
                         </div>
                     </div>
                 </div>
             </div>
         </footer>
-        
-        
     </body>
 </html>
